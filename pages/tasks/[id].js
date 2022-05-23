@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import domain from '../../utils/config'
 import axios from 'axios'
 
-function index(task) {
+function Index(task) {
     const router = useRouter()
     const [title, setTitle] = useState(task.task.title)
     const [description, setDescription] = useState(task.task.description)
@@ -89,4 +89,4 @@ export async function getServerSideProps(context){
 
 }
 
-export default index
+export default Index
