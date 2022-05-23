@@ -2,7 +2,7 @@ import React from 'react'
 import TaskItem from '../../components/TaskItem'
 import domain from '../../utils/config'
 
-function index(tasks) {
+function Index(tasks) {
   const taskitems = tasks.tasks.map((task) => {
     return <TaskItem task={task} />
   }).reverse()
@@ -32,4 +32,4 @@ export async function getStaticProps() {
     }
 }
 
-export default index
+export default Index
