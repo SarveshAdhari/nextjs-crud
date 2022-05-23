@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useRouter } from 'next/router'
 import domain from '../../utils/config'
 
-function Addtask() {
+export default function Addtask() {
 
     const router = useRouter()
 
@@ -79,5 +79,3 @@ function Addtask() {
         </div>
     )
 }
-
-export default Addtask;
