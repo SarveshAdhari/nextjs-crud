@@ -4,7 +4,7 @@ import domain from '../../utils/config'
 
 function Index(tasks) {
   const taskitems = tasks.tasks.map((task) => {
-    return <TaskItem task={task} />
+    return <TaskItem task={task} key={task._id}/>
   }).reverse()
 
   return (
